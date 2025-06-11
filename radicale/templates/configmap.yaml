@@ -1,0 +1,14 @@
+{{- $config_ext_data := .Values.config.extFile.config }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "radicale.fullname" . }}
+  labels:
+    {{- include "radicale.labels" . | nindent 4 }}
+data:
+  config: |
+{{- if (and ($config_ext_data) (not (empty .Values.config.extFile.config))) -}}
+  {{- $config_ext_data | nindent 4 }}
+{{- else }}
+  {{- tpl (.Files.Get "config/config.gotpl") . | nindent 4 }}
+{{- end }}
