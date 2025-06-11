@@ -3,6 +3,16 @@ entries:
   radicale:
   - apiVersion: v2
     appVersion: 3.5.4.0
+    created: "2025-06-11T23:22:35.678678313Z"
+    description: A Helm chart for Radicale, a CalDAV and CardDAV server
+    digest: be73b294f00c2b73e5a3d83e8a02879df30d538c04146d444dcb6677583a1f88
+    name: radicale
+    type: application
+    urls:
+    - https://github.com/Strafo/helm-charts/releases/download/radicale-0.1.4/radicale-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 3.5.4.0
     created: "2025-06-11T23:19:28.694980719Z"
     description: A Helm chart for Radicale, a CalDAV and CardDAV server
     digest: 8e39ae8d32dd857c3e7eb9b5718fff798bdc956d7238ab132b9b0c8266fc6804
@@ -41,4 +51,4 @@ entries:
     urls:
     - https://github.com/Strafo/helm-charts/releases/download/radicale-0.1.0/radicale-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-11T23:19:28.695008271Z"
+generated: "2025-06-11T23:22:35.678696908Z"
