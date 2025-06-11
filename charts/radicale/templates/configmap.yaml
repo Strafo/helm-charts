@@ -10,5 +10,5 @@ data:
 {{- if (and ($config_ext_data) (not (empty .Values.config.extFile.config))) -}}
   {{- $config_ext_data | nindent 4 }}
 {{- else }}
-  {{- tpl (.Files.Get "config/config.gotpl") . | nindent 4 }}
+  {{- tpl (.Files.Get "config/config.tpl") . | nindent 4 }}
 {{- end }}
