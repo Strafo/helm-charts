@@ -50,7 +50,7 @@ cache_logins = {{ .Values.config.auth.cache_logins }}
 {{- end -}}
 {{- if .Values.config.auth.cache_successful_logins_expiry -}}
 cache_successful_logins_expiry = {{ .Values.config.auth.cache_successful_logins_expiry }}
-{{- end -‍
+{{- end -‍}}
 {{- if .Values.config.auth.cache_failed_logins_expiry -}}
 cache_failed_logins_expiry = {{ .Values.config.auth.cache_failed_logins_expiry }}
 {{- end -}}
