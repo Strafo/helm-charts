@@ -67,6 +67,11 @@ spec:
             items:
               - key: config
                 path: config
+        - name: radicale-users-volume 
+          secret:
+            secretName: {{ include "radicale.fullname" . }}
+            items:
+              - key: users
       {{- with .Values.volumes }}
         {{- toYaml . | nindent 8 }}
       {{- end }}

@@ -131,6 +131,9 @@ affinity: {}
 config:
   extFile:
     config:
+  users:
+    # user: password
+    # user2: password2
   server:
     hosts:
     max_connections:
