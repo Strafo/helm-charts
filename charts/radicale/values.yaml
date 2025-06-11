@@ -176,8 +176,8 @@ config:
     oauth2_token_endpoint:
     pam_serivce:
     pam_group_membership:
-    htpasswd_filename:
-    htpasswd_encryption:
+    htpasswd_filename: /config/users
+    htpasswd_encryption: bcrypt
     htpasswd_cache:
     delay:
     realm:
@@ -191,7 +191,7 @@ config:
     urldecode_username:
   storage:
     type:
-    filesystem_folder:
+    filesystem_folder: /data/collections
     filesystem_cache_folder:
     use_cache_subfolder_for_item:
     use_cache_subfolder_for_history:
