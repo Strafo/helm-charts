@@ -25,7 +25,7 @@ certificate_authority = {{ .Values.config.server.certificate_authority }}
 {{- end -}}
 {{- if .Values.config.server.protocol -}}
 protocol = {{ .Values.config.server.protocol }}
-{{- end -‍
+{{- end -‍}}
 {{- if .Values.config.server.ciphersuite -}}
 ciphersuite = {{ .Values.config.server.ciphersuite }}
 {{- end -}}
