@@ -1,0 +1,7 @@
+# Developer dependencies
+.bin
+
+# IDE resources
+.vscode
+.idea
+.devcontainer/
