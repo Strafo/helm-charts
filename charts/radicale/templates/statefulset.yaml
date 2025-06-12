@@ -58,7 +58,8 @@ spec:
             - name: {{ include "radicale.fullname" . }}
               mountPath: /data 
             - name: radicale-config-volume
-              mountPath: /config
+              mountPath: /secrets
+              readOnly: true
           {{- with .Values.volumeMounts }}
             {{- toYaml . | nindent 12 }}
           {{- end }}
@@ -69,7 +70,7 @@ spec:
             items:
               - key: config
                 path: config
-        - name: radicale-users-volume 
+        - name: radicale-users-volume
           secret:
             secretName: {{ include "radicale.fullname" . }}
             items:
