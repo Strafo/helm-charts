@@ -81,4 +81,37 @@ entries:
     urls:
     - https://github.com/Strafo/helm-charts/releases/download/radicale-0.1.0/radicale-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-12T18:16:16.357833602Z"
+  searxng:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2025-11-12T17:30:15.970993716Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.pascaliske.dev
+      version: 0.0.3
+    description: SearXNG is a free internet metasearch engine which aggregates results
+      from various search services and databases.
+    digest: 6fa2cd0a5abd459f22f9d36c301de6bb88e4e8f6446761e18ee502dfd21a9c5f
+    icon: https://github.com/searxng/searxng/blob/master/searx/static/themes/simple/img/favicon.png?raw=true
+    keywords:
+    - searx
+    - searxng
+    - search engine
+    - privacy
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: searxng@unixfoxremovemeifyouwanttocontactme.eu
+      name: unixfox
+    name: searxng
+    sources:
+    - https://github.com/searxng/searxng
+    - https://docs.searxng.org
+    - https://hub.docker.com/r/searxng/searxng
+    urls:
+    - https://github.com/Strafo/helm-charts/releases/download/searxng-1.0.1/searxng-1.0.1.tgz
+    version: 1.0.1
+generated: "2025-11-12T17:30:15.971017173Z"
